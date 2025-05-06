@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='loco.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="minicircle"></div>
+    <div id="main">
+        <div id="hero">
+            <div id="nav">
+                <a href="#">Major Project</a>
+                <h4>Project ID: 4L_MP190</h4>
+            </div>
+            <div id="heading">
+                <div class="bounding">
+                    <h1 class="boundingelem">Spam </h1>
+                </div>
+                <div class="blocktext">
+                    <div class="bounding">
+                        <h1 class="boundingelem" id="secondh1">Detection</h1>
+                    </div>
+                    <div class="bounding">
+                        <h5 class="boundingelem">using DistillBert</h5>
+                    </div>
+                    <div class="bounding">
+                        <form class="spam-form" method="POST">
+                            <input type="text" name="message" placeholder="Type a message..." required>
+                            <button type="submit">Classify</button>
+                        </form>
+                        {% if prediction %}
+                            <div class="result-box">
+                                <p>{{ prediction }}</p>
+                            </div>
+                        {% endif %}
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="chhotiheadings">
+                <div class="bounding">
+                    <h5 class="boundingelem"></h5>
+                </div>
+                <div class="bounding">
+                    <h5 class="boundingelem"></h5>
+                </div>
+            </div>
+            <div id="herofooter">
+                <a href="#">enter the message 📩 <i class="ri-arrow-right-up-line"></i></a>
+                <a href="#">press the Classify button<i class="ri-arrow-right-up-line"></i></a>
+                <div id="iconset">
+                    <div >MEMBERS</div>
+                    <div class="circle"><i class="ri-arrow-down-line"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="second">
+            <div class="elem">
+                <h1>Aviral Dwivedi</h1>
+                <h5>RA2111003030190</h5>
+            </div>
+            <div class="elem">
+                <h1>anuj prasad</h1>
+                <h5>RA2111003030220</h5>
+            </div>
+            <div class="elem">
+                <h1>amal krishna</h1>
+                <h5>RA2111003030215</h5>
+            </div>
+            <div class="elem elemlast">
+                <h1>Yukti Johri</h1>
+                <h5>RA2111003030191</h5>
+            </div>
+        </div>
+
+        <div id="about">
+            <img src="static\spam_image.png" alt="">
+            <div id="textabout">
+                <h5><u>ABout this project</u></h5>
+                <p>The fine-tuned DistilBERT model accurately classifies SMS messages as "Spam" or "Not Spam," delivering fast, real-time predictions through a web app. This system helps users filter unwanted messages and guard against spam or phishing. It also serves as a foundation for more advanced solutions to manage and secure text-based communication in the digital age..</p>
+            
+            </div>
+        </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
