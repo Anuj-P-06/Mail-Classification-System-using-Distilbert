@@ -37,30 +37,31 @@ This project is a **Spam Detection System** built using a fine-tuned **DistilBER
 
 ## Tasks Performed:
 
-### 1) Dataset Preparation:
-- Loaded the spam/ham message dataset using Hugging Face Datasets.
-- Tokenized messages using DistilBERT tokenizer.
-- Preprocessed text with truncation and padding for model input.
+### 1) Model Fine-Tuning:
+- Tokenized SMS messages using DistilBERT tokenizer.
+- Fine-tuned the `distilbert-base-uncased` model on a binary classification task (spam vs ham).
+- Used the Hugging Face `Trainer` API for training and evaluation.
+- Tracked model performance using accuracy metrics.
+- Saved the trained model and tokenizer to a local directory.
 
-### 2) Model Fine-Tuning:
-- Fine-tuned DistilBERT on the binary classification task (Spam vs Ham).
-- Used Trainer API from Hugging Face with evaluation and logging.
-- Computed accuracy as a metric during training.
+### 2) Flask Backend:
+- Created API endpoints using Flask to render the HTML template and accept user input.
+- Loaded the fine-tuned model and tokenizer at runtime.
+- Performed inference on user-provided text and returned predictions as "Spam" or "Ham".
 
 ### 3) Model Saving:
 - Saved the fine-tuned model and tokenizer locally in a directory for later inference.
 
-### 4) Flask Web Application:
-- Created a Flask backend to load the fine-tuned model.
-- Built routes to receive user input and return prediction results.
-- Rendered predictions on a custom HTML frontend with styling and interactivity.
-
-### 5) Frontend Design:
-- Developed a simple and responsive UI using HTML, CSS, and JS.
-- Created a message input form with real-time classification on submission.
-- Displayed classification result with clear labels (Spam or Ham).
-
----
+### 4) Frontend Design (UI/UX):
+- Built a responsive and interactive UI using **HTML**, **CSS**, and **JavaScript**.
+- Integrated an animated **custom cursor**:  
+  - A **small circle** follows the mouse pointer smoothly.
+  - The circle **compresses (scales down)** when the pointer slows down or hovers over elements.
+  - The circle **expands (scales up)** dynamically on fast movement or interaction.
+- Designed a **transition effect** between interaction states for a more fluid and modern UX.
+- Added form input for the user to enter a message and receive classification results dynamically.
+- Displayed output prediction ("Spam" or "Ham") with clean styling and feedback animation.
+- Ensured the frontend is mobile-friendly and styled with custom fonts, colors, and transitions.
 
 ## Web App Screenshots and UI:
 
