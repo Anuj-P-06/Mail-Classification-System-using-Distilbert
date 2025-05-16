@@ -64,7 +64,7 @@ This project is a **Spam Detection System** built using a fine-tuned **DistilBER
 
 ## Web App Screenshots and UI:
 
-![UI Screenshot](![Image](https://github.com/user-attachments/assets/02666624-d125-49f1-852e-c5f7daf2e571))
+[Image](https://github.com/user-attachments/assets/02666624-d125-49f1-852e-c5f7daf2e571)
 
 > Replace the image link with an actual screenshot once available.
 
