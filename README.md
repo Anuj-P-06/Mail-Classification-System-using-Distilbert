@@ -76,10 +76,10 @@ python app.py
 
 ## Results and Findings:
 
-- ✅ Successfully fine-tuned DistilBERT for spam classification with high accuracy.  
-- ✅ Created a fully functional web app for message classification.  
-- ✅ Model can handle short message spam detection in real-time.  
-- ✅ Demonstrated that LLMs like DistilBERT are effective even for small-scale NLP tasks.  
-- ✅ Can be extended for multilingual or domain-specific spam detection tasks.  
-- ✅ User-friendly interface makes it deployable as a lightweight anti-spam solution.  
+-  Successfully fine-tuned DistilBERT for spam classification with high accuracy.  
+-  Created a fully functional web app for message classification.  
+-  Model can handle short message spam detection in real-time.  
+-  Demonstrated that LLMs like DistilBERT are effective even for small-scale NLP tasks.  
+-  Can be extended for multilingual or domain-specific spam detection tasks.  
+-  User-friendly interface makes it deployable as a lightweight anti-spam solution.  
 
